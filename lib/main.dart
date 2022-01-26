@@ -3,6 +3,9 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
+import 'package:helloworld/ParentWidget.dart';
+import 'package:helloworld/TapBoxA.dart';
+import 'package:helloworld/favorite_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,11 +46,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
           /*3*/
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
-          const Text('41'),
+          const FavoriteWidget(),
         ],
       ),
     );
@@ -94,6 +93,8 @@ class MyApp extends StatelessWidget {
             titleSection,
             buttonSection,
             textSection,
+            TapboxA(),
+            ParentWidget(),
           ],
         ),
       ),
